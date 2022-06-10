@@ -1,0 +1,63 @@
+Git e GitHub
+
+Windows - terminal Shell
+
+cd - movimentar entre pastas
+dir - listar pastas
+mkdir - criar pastas
+del - deletar arquivos
+rmdir - deletar pastas
+cls - limpar o terminal
+echo > - criar arquivos
+
+Unix - terminal Bash
+
+cd
+ls - listar pastas
+mkdir
+rm
+rf
+clear
+
+O Git usa o algoritmo de encriptação Sha1 (chave 40 digitos)
+openssl sha1 "texto.txt"
+
+Objetos internos do Git
+Blobs - metadados do git (tipo objeto; tamanho string; tamanho arquivo)
+Trees - armazena os blobs (aponta); guarda o nome do arquivo
+Commits - junta tudo - tree, parente, autor, mensagem, timestamp
+
+Commit é unico para cada autor 
+
+Ambos commit e tree possuem Sha1 próprios
+
+Git é um sistema distribuido seguro
+
+git init
+git add
+git commit
+
+ls -a (mostra arquivos ocultos)
+
+git config --global user.email ""
+git config --global user.name ""
+
+git add *
+
+git commit -m ""
+
+git status
+
+git config --list
+
+git config --global --unset user.name
+
+git remote add origin
+
+git remote -v
+
+git push origin master
+
+git pull origin master
+
+git clone "url"
